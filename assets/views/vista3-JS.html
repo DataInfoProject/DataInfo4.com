@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-vista3.css">
+    <title>DataInfo.com</title>
+</head>
+<body>
+    <header id="header">
+        <img src="../img/Visual_Studio_Code_1.35_icon.svg.png" alt="logo" id="logo">
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="../img/248-2485394_menu-icon-png-red.png" class="menu-icon" alt=""></label>
+        <ul class="menu ">
+            <li class="item"><a href="../../index.html">Inicio</a>
+            <li class="item"><a href="./vista4-Sobre nosotros.html">Sobre nosotros</a></li>
+            <li class="btn"><a href="./vista5-Contactanos.html">Contactanos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container-datos">
+
+            <div class="datos-1">
+                <h2>JavaScript</h2>
+                <img src="../img/JavaScript-logo.png" alt="">
+                <h2>Historia</h2>
+                <h3>Origen y creación</h3>
+                <p>
+                    JavaScript fue creado por Brendan Eich en 1995 mientras trabajaba en Netscape Communications. Originalmente se desarrolló en solo 10 días. El objetivo era crear un lenguaje que fuera fácil de aprender y usar por diseñadores web y desarrolladores.
+                    <br>
+                    <br>
+                    Inicialmente el lenguaje se llamó Mocha, pero fue renombrado a LiveScript, Poco antes del lanzamiento del navegador Netscape Navigator 20. En diciembre de 1995, se camb io el nombre a JavaScript para aprovechas la popularidad del lenguaje de programación Java de Sun Microsystems.
+                </p>
+                <br>
+                <h2>¿Qué es JavaScript realmente?</h2>
+                <br>
+                <p>
+                    JavaScript es un robusto lenguaje de programación que se puede aplicar a un documento HTML y utilizar para crear interactividad dinámica en los sitios web. Fue inventado por Brendan Eich, cofundador del proyecto Mozilla, Mozilla Foundation y la Corporación Mozilla.
+                    <br>
+                    <br>
+                    Puedes hacer casi cualquier cosa con JavaScript. Puedes empezar con pequeñas cosas como carruseles, galerías de imágenes, diseños fluctuantes y respuestas a las pulsaciones de botones. Con más experiencia, serás capaz de crear juegos, animaciones 2D y gráficos 3D, aplicaciones integradas basadas en bases de datos ¡y mucho más!
+                    <br>
+                    <br>
+                    JavaScript por sí solo es bastante compacto aunque muy flexible, y los desarrolladores han escrito gran cantidad de herramientas encima del núcleo del lenguaje JavaScript, desbloqueando una gran cantidad de funcionalidad adicional con un mínimo esfuerzo. Esto incluye:
+                    <br>
+                    <ul>
+                        <li>
+                            Interfaces de Programación de Aplicaciones del Navegador ( <a href="https://es.wikipedia.org/wiki/API">API</a> ) — APIs construidas dentro de los navegadores que ofrecen funcionalidades como crear dinámicamente contenido HTML y establecer estilos CSS, hasta capturar y manipular un vídeo desde la cámara web del usuario, o generar gráficos 3D y muestras de sonido.
+    
+                        </li>
+                        <li>
+                            APIs de terceros, que permiten a los desarrolladores incorporar funcionalidades en sus sitios de otros proveedores de contenidos como Twitter o Facebook.
+                        </li>
+                        <li>
+                            Marcos de trabajo y librerías de terceros que puedes aplicar a tu HTML para que puedas construir y publicar rápidamente sitios y aplicaciones.
+                        </li>
+                    </ul>
+                    <br> 
+                </p>
+                <p>
+                    Ya que se supone que este artículo es solo una introducción ligera a JavaScript, la intención no es confundirte en esta etapa hablando en detalle sobre cuál es la diferencia entre el núcleo del lenguaje JavaScript y las diferentes herramientas listadas arriba.
+                </p>
+            </div>
+
+            <div class="datos-1">
+                <h2>Variables</h2>
+                <p>
+                    Las Variables son contenedores en los que puedes almacenar valores. Primero debes declarar la variable con la palabra clave var(menos recomendado) o let, seguida del nombre que le quieras dar. Se recomienda más el uso de letque de var(más adelante se profundiza un poco sobre esto):
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+let nombreDeLaVariable&semi;
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    Tras declarar una variable, asignarle un valor:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+nombreDeLaVariable = "Bob"&semi;
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    Puedes hacer las dos cosas en la misma línea si lo necesitas:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+let nombreDeLaVariable = "Bob"&semi;
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    Puedes obtener el valor de la variable llamándola por su nombre:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+nombreDeLaVariable&semi;
+                    </code></pre>
+                </div>
+                <br>
+            <p>
+                Después de haberle dado un valor a la variable, puedes volver a cambiarlo:
+            </p>
+            <div class="ejemplo">
+                <pre><code>
+let nombreDeLaVariable "Bob"&semi;
+nombreDeLaVariable "Steve"&semi;
+                </code></pre>
+            </div>
+            <br>
+            <p>
+                Advierte que las variables tienen distintos tipos de datos :
+            </p>
+            <br>
+            <table class="tabla-1">
+                <thead>
+                    <tr>
+                        <th><strong>Variable</strong></th>
+                        <th><strong>Explicación</strong></th>
+                        <th><Strong>Ejemplo</Strong></th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Cadena</td>
+                            <td>Esto es una secuencia de texto conocida como cadena. Para indicar que la variable es una cadena, debes escribirlo entre comillas.</td>
+                            <td><code>let miVariable = 'Bob'&semi;</code><p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Número</td>
+                            <td>Esto es un número. Los números no tienen comillas.
+                            </td>
+                            <td><code>let miVariable = 10&semi;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Booleano</td>
+                            <td>Tienen valor verdadero/falso. <code>true</code>/ <code>false</code> son palabras especiales en JS, y no necesitan comillas.</td>
+                            <td><code>let miVariable = true&semi;</code></td>
+                        </tr>
+                        <tr>
+                            <td>Formación</td>
+                            <td>Una estructura que te permite almacenar varios valores en una sola referencia.</td>
+                            <td><code>let miVariable = [1,'Bob','Steve',10]&semi;</code>
+                            Llama a cada miembro del array así: <code>miVariable[0]</code>, <code>miVariable[1]</code>, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>Objeto</td>
+                            <td>Básicamente cualquier cosa. Todo en JavaScript es un objeto y puede ser almacenado en una variable. Mantén esto en mente mientras aprendes.</td>
+                            <td><code>let miVariable = document.querySelector('h1')&semi;</code>
+                            Todos los ejemplos anteriores también.
+                                </td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+            <br>
+            <p>
+                Entonces, ¿para qué necesitamos las variables? Las variables son necesarias para hacer cualquier cosa interesante en programación. Si los valores no pudieran cambiar, entonces no podrías hacer nada dinámico, como personalizar un mensaje de bienvenida de un usuario que visita tu página, cambiar la imagen que se muestra en una galería de imágenes, etc.
+            </p>
+            </div>
+            <div class="datos-1">
+                <h2>Comentarios</h2>
+                <p>Puedes escribir comentarios entre el código JavaScript, igual que puedes en CSS. El navegador ignora el texto marcado como comentario. En JavaScript, los comentarios de una sola línea se escriben así:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+// Esto es un comentario
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    Pero también puedes escribir comentarios en más de una línea, igual que en CSS:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+/* 
+Esto es un comentario
+de varias líneas.
+*/
+                    </code></pre>
+                </div>
+            </div>
+            <div class="datos-1">
+                <h2>Operadores</h2>
+                <p>
+                    Un operador es básicamente un símbolo matemático que puede actuar sobre dos valores (o variables) y producir un resultado. En la tabla de abajo aparecen los operadores más simples, con algunos ejemplos para probarlos en la consola del navegador.
+                </p>
+                <br>
+                <table class="tabla-1">
+                    <thead>
+                        <tr>
+                            <th><strong>Operador</strong></th>
+                            <th><strong>Explicación</strong></th>
+                            <th><Strong>Símbolo(s)</Strong></th>
+                            <th><strong>
+                                Ejemplo
+                            </strong></th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Suma/concatenación</td>
+                                <td>Se usa para sumar dos números, o juntar dos cadenas en una.</td>
+                                <td>
+                                    <code>+</code>
+                                </td>
+                                <td><code>6+9&semi;"Hola" + "mundo!"&semi;</code><p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Resta, multiplicación, división</td>
+                                <td>Estos hacen lo que esperarías que hicieran en las matemáticas básicas.
+                                </td>
+                                <td>
+                                    <code>-</code>, <code>*</code>, <code>/</code>
+                                </td>
+                                <td><code>9 - 3;
+                                    8 * 2; // La multiplicación en JS es un asterisco
+                                    9 / 3;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Operador de asignación</td>
+                                <td>Los has visto anteriormente: asigna un valor a una variable.</td>
+                                <td><code>=</code></td>
+                                <td><code>let miVariable = 'Bob';</code></td>
+                            </tr>
+                            <tr>
+                                <td>identidad/igualdad</td>
+                                <td>Comprueba si dos valores son iguales entre sí, y devuelve un valor de true/ false(booleano).</td>
+                                <td><code>===</code></td>
+                                <td><code>let miVariable = 3;
+                                    miVariable === 4;</code></td>
+                            </tr>
+                            <tr>
+                                <td>Negación, distinto (no igual)</td>
+                                <td>En ocasiones utilizado con el operador de identidad, la negación es en JS el equivalente al operador lógico NOT — cambia truepor falsey viceversa.</td>
+                                <td><code>!</code>, <code>!==</code></td>
+                                <td>Aquí estamos comprobando "<code>miVariable</code> NO es igual a 3". Esto devuelve false, porque <code>miVariable</code> ES igual a 3.
+                                <code>let miVariable = 3;
+                                    miVariable !== 3;</code>
+                                                        
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+                <br>
+                <p>
+                    Hay muchos operadores para explorar, pero con esto será suficiente por ahora.
+                </p>
+            </div>
+            <div class="datos-1">
+                <h2>Condicionales</h2>
+                <p>
+                    Las condicionales son estructuras de código que permiten comprobar si una expresión devuelve verdadera o no, y después ejecuta un código diferente dependiendo del resultado. La forma de condicional más común es la llamada <code>if... else</code>. Entonces, por ejemplo:
+                    <br>
+                    <br>
+                    <div class="ejemplo">
+                        <pre><code>
+let helado = "chocholate";
+if (helado === "chocolate") {
+    alert("¡Sí, amo el helado de chocolate!");
+} else {
+  alert("Awwww, pero mi favorito es el de chocolate...");
+  }
+                        </code></pre>
+                    </div>
+                </p>
+                <br>
+                <p>
+                    La expresión dentro de <code>if (... )</code> es el criterio — este usa al operador de identidad (descrito arriba) para comparar la variable <code>helado</code> con la cadena <code>chocolate</code> para ver si las dos son iguales. Si esta comparación devuelve <code>true</code>, se ejecuta el primer bloque de código. Si no, ese código se omite y se ejecuta el segundo bloque de código después de la declaración <code>else</code>.
+                </p>
+            </div>
+            <div class="datos-1">
+                <h2>Funciones</h2>
+                <p>
+                    Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de manera que puedes llamar esa función con un solo nombre, y no tendrás que escribir el código entero cada vez que la utilices. Ya has visto algunas funciones más arriba, por ejemplo:
+                    <br>
+                    <br>
+                </p>
+                <div class="ejemplo">
+                    <pre><code>
+let nombreDeLaVariable = document.querySelector("h1")
+                    </code></pre>
+                </div>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+alert("¡Hola!");
+                    </code></pre>
+                </div>
+                <p>
+                    Estas funciones <code>document.querySelector</code> y <code>alert</code> están integradas en el navegador para poder utilizarlas en cualquier momento.
+                    <br>
+                    <br>
+                    Si ves algo que parece un nombre de variable, pero tiene paréntesis — <code>()</code> — al final, probablemente sea una función. Las funciones con frecuencia toman argumentos —pedazos de datos que necesitan para hacer su trabajo—. Estos se colocan dentro de los paréntesis, y se separan con comas si hay más de uno.
+                </p>
+                <br>
+                <p>
+                    Por ejemplo, la función <code>alert()</code> hace aparecer una ventana emergente dentro de la ventana del navegador, pero necesitas asignarle una cadena como argumento para decirle qué mensaje se debe escribir en la ventana emergente.
+                </p>
+                <br>
+                <p>
+                    Las noticias buenas son que podemos definir nuestras propias funciones —en el siguiente ejemplo escribimos una función simple que toma dos números como argumentos y los multiplica entre sí—:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+function multiplica(num2) {
+let resultado = nnum2;
+return resultado;
+}
+                          
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    Trata de ejecutar la función anterior en la consola. Después trata de usar la nueva función algunas veces, p.ej:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+multiplica(4, 7);
+multiplica(20, 20);
+multiplica(0.5, 3);        
+                    </code></pre>
+                </div>
+            </div>
+            <div class="datos-1">
+                <h2>Eventos</h2>
+                <p>
+                    Para crear una interacción real en tu sitio web, debes usar eventos. Estos son unas estructuras de código que captan lo que sucede en el navegador, y permite que en respuesta a las acciones que suceden se ejecute un código. El ejemplo más obvio es un clic ( click event ), que se activa al hacer clic sobre algo. Para demostrar esto, prueba ingresando lo siguiente en tu consola, luego da clic sobre la página actual:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+document.querySelector("html").onclick = function () {
+  alert("¡Ouch! ¡Deja de pincharme!");
+};   
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    Hay muchas maneras de enlazar un evento a un elemento; Aquí hemos seleccionado el elemento <code>&lt;html&gt;</code> y le asignamos a su propiedad <code>onclick</code> una función anónima (función sin nombre) que contiene el código que se ejecutará cuando el evento suceda.
+                </p>
+                <br>
+                <p>
+                    Nota que
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+document.querySelector("html").onclick = function () {};
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                es equivalente a
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+let miHTML = document.querySelector("html");
+miHTML.onclick = function () {};                            
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    es solo un modo más corto de escribirlo.
+                </p>
+            </div>
+            <div class="datos-1">
+                <h2>Añadir un cambio de imagen</h2>
+                <p>
+                    En esta sección agregarás otra imagen a tu sitio usando la API DOM y agregarás un poco de código para cambiar entre imágenes al hacer clic.
+                    <br>
+                    <ol>
+                        <li>Primero que todo, busca una imagen que te guste para tu sitio. Asegúrate de que sea del mismo tamaño que la primera, o lo más cerca posible.
+                        </li>
+                        <li>Guarde su imagen en su carpeta <code>images</code>.
+                        </li>
+                        <li>Renombra esta imagen «firefox2.png» (sin las comillas).
+                        </li>
+                        <li>Ve a tu archivo <code>main.js</code> y agrega el siguiente JavaScript (si tu JavaScript de «Hola Mundo» está aún allí, bórralo).
+                        <br>
+                        <div class="ejemplo">
+                            <pre><code>
+let miImage = document.querySelector("img");
+miImage.onclick = function () {
+  let miSrc = miImage.getAttribute("src");
+  if (miSrc === "images/firefox-icon.png") {
+    miImage.setAttribute("src", 
+"images/firefox2.png");
+  } else {
+    miImage.setAttribute("src", "images/firefox-icon.png");
+  }
+}; 
+                            </code></pre>
+                        </div>        
+                        </li>
+                        <li>Guarde todos los archivos y cárguelos <code>index.html</code> en su navegador. Ahora cuando hagas clic en la imagen, ¡esta debe cambiar por otra!
+                        </li>
+                    </ol>
+                </p>
+                <br>
+                <p>
+                    Esto fue lo que sucedió: se almacena una referencia a tu elemento <code>&lt;img&gt;</code> en la variable miImage. Luego, haces que esta propiedad del manejador de evento <code>onclick</code> de la variable sea igual a una función sin nombre (una función «anónima»). Ahora, cada vez que haga clic en la imagen:
+                    <br>
+                    <ol>
+                        <li>El código recupera el valor del atributo <code>src</code> de la imagen.
+                        </li>
+                        <li>El código usa una condicional para comprobar si el valor <code>src</code> es igual a la ruta de la imagen original:
+                            <ol>
+                                <li>Si es así, el código cambia el valor de srca la ruta de la segunda imagen, forzando a que se cargue la otra imagen en el elemento <code>&lt;img&gt;</code>.
+                                </li>
+                                <li>Si no es así (significa que ya fue modificado), se cambiará el valor de <code>src</code> nuevamente a la ruta de la imagen original, regresando a como era en un principio.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="datos-1">
+                <h2>Conclusión</h2>
+                <p>
+                    JavaScript es un lenguaje de programación versátil y esencial en el desarrollo web moderno. Desde su creación en 1995, ha evolucionado significativamente, convirtiéndose en herramienta fundamental tanto para el desarrollo frontend como backend.Su naturaleza interpretada y dinámicamente tipada lo hace accesible y flexible, ideal para desarrolladores de todos los niveles.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-aling">
+
+                <div class="footer-links">
+
+                    <h4>Pagina</h4>
+
+                    <ul>
+                        <li><a href="./vista4-Sobre nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="./vista5-Contactanos.html">Contactanos</a></li>
+                        <li><a href="./vista6-Bibliografia.html">Bibliografia</a></li>
+                    </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos</h4>
+                        <div class="social-links"><a href="#" class="redsocial1"><img src="../img/Facebook_Logo_2023.png" alt="Facebook_Icon"></a><a href="#" class="redsocial3"><img src="../img/WhatsApp_icon.png" alt="WhatsApp_icon"></a></div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/script1.js"></script>
+</body>
+</html>
