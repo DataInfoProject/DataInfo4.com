@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-vista2.css">
+    <title>DataInfo.com</title>
+</head>
+<body>
+    <header id="header">
+        <img src="../img/Visual_Studio_Code_1.35_icon.svg.png" alt="logo" id="logo">
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="../img/248-2485394_menu-icon-png-red.png" class="menu-icon" alt=""></label>
+        <ul class="menu ">
+            <li class="item"><a href="../../index.html">Inicio</a></li>
+            <li class="item"><a href="./vista4-Sobre nosotros.html nosotros.html">Sobre nosotros</a></li>
+            <li class="btn"><a href="./vista5-Contactanos.html">Contactanos</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <div class="container-datos">
+
+            <div class="datos-1">
+                <h2>CSS</h2>
+                <br>
+                <img src="../img/logo-2582747_640.png" alt="">
+                <br>
+                <h2>¿Qué es CSS?</h2>
+                <br>
+                <p>
+                    CSS (<i>Hojas de Estilo en Cascada</i>) es el código que usas para dar estilo a tu página web. <i>CSS Básico</i> te lleva a través de lo que tú necesitas para empezar. Contestará a preguntas del tipo: ¿Cómo hago mi texto rojo o negro? ¿Cómo hago que mi contenido se muestre en tal y tal lugar de la pantalla? ¿Cómo decoro mi página web con imágenes de fondo y colores?
+                </p>
+            </div>
+
+            <div class="datos-1">
+                <h2>CSS</h2>
+                <br>
+                <h2>Entonces ¿qué es CSS, realmente?</h2>
+                <br>
+                <p>
+                    Como HTML, CSS (<I>Cascading Style Sheets</I>) u Hojas de estilo en cascada en español, no es realmente un lenguaje de programación, tampoco es un lenguaje de marcado. Es un <i>lenguaje</i> de hojas de estilo, es decir, te permite aplicar estilos de manera selectiva a elementos en documentos HTML. Por ejemplo, para seleccionar todos los elementos de párrafo en una página HTML y volver el texto dentro de ellos de color rojo, tienes que escribir este CSS:
+                </p>
+                <br>
+                <div class="ejemplo">
+                    <pre><code>
+p &#123;
+    color: red;
+&#125;
+                    </code></pre>
+                </div>
+                <br>
+                <p>
+                    Vas a probarlo: pega estas tres líneas de CSS en un nuevo archivo en tu editor de texto y guarda este archivo como <code>style.css</code> en tu directorio <code>styles</code>(estilos).
+                    <br>
+                    <br>
+                    Pero aún debes aplicar el CSS a tu documento HTML, de otra manera el estilo CSS no cambiará cómo tu navegador muestra el documento HTML. 
+                </p>
+            </div>
+
+            <div class="datos-1">
+                <h2><Strong>Anatomía de una regla CSS</Strong></h2>
+                <p>Observa el código CSS de arriba, un poco más un detalle:
+                <br>
+                <br>
+                <img src="../img/css-declaration-small.png">
+                <br>
+                <br>
+                La estructura completa es llamada <strong>regla predeterminada</strong> (pero a menudo «regla» para abreviar). Nota también los nombres de las partes individuales:
+                </p>
+                <br>
+
+                <h3><strong>Selector</strong></h3>
+                <br>
+                <p>El elemento HTML en el que comienza la regla. Esta selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos <code>&lt;p&gt;</code>). Para dar estilo a un elemento diferente, solo cambia el selector.</p>
+                <br>
+                <h3><strong>Declaración</strong></h3>
+                <br>
+                <p>Una sola regla como <code>color: red&semi;</code> especifica a cuál de las propiedades del elemento quieres dar estilo.</p>
+                <br>
+                <h3><strong>Propiedades</strong></h3>
+                <br>
+                <p>Maneras en las cuales puedes dar estilo a un elemento HTML. (En este caso, <code>color</code> es una propiedad del elemento <code>&lt;p&gt;</code>). En CSS, selecciona qué propiedad quieres afectar en tu regla.</p>
+                <br>
+                <h3>Valor de la propiedad</h3>
+                <br>
+                <p>A la derecha de la propiedad, después de los dos puntos (:), tienes el <strong>valor de la propiedad </strong>, para elegir una de las muchas apariencias posibles para una propiedad determinada (hay muchos valores para <code>color</code> además de <code>red</code>).</p>
+                <br>
+                <p>Nota las otras partes importantes de la sintaxis:</p>
+                <br>
+                <ul>
+                    <li><p>Cada una de las reglas (aparte del selector) deben estar encapsuladas entre llaves (<code>{}</code>).</p></li>
+                    <li><p>Dentro de cada declaración, debes usar los dos puntos (<code>:</code>) para separar la propiedad de su valor.</p></li>
+                    <li><p>Dentro de cada regla, debes usar el punto y coma (<code>;</code>) para separar una declaración de la siguiente.</p></li>
+                </ul>
+                <br>
+                <p>
+                    De este modo para modificar varios valores de propiedad a la vez, solo necesitas escribirlos separados por punto y coma (;), así:
+                </p>
+                <div class="ejemplo">
+                    <pre><code>
+p {
+    color: red&semi;
+    width: 500px&semi;
+    border: 1px solid black&semi;
+}
+                    </code></pre>
+                </div>
+            </div>
+            <div class="datos-1">
+                <h2>Seleccionar varios elementos</h2>
+                <p>También puedes seleccionar varios elementos y aplicar una sola regla a todos ellos. Incluye varios selectores separados por comas (,). Por ejemplo:
+
+                    <div class="ejemplo">
+                        <pre><code>
+p,
+li,
+h1 {
+    color; red&semi;
+}
+                        </code></pre>
+                    </div>
+                </p>
+            </div>
+            <div class="datos-1">
+                <h2>Diferentes tipos de selectores</h2>
+                <p>Existen muchos tipos diferentes de selectores. Antes, solo viste los <strong>selectores de elementos</strong>, los cuales seleccionan todos los elementos de un tipo dado en los documentos HTML. Sin embargo, puedes hacer selecciones más específicas que esas. A continuación están algunos de los tipos de selectores más comunes:</p>
+                <table class="tabla-1">
+                    <thead>
+                        <tr>
+                            <th><strong>Nombre del selector</strong></th>
+                            <th><strong>¿Qué seleccionas?</strong></th>
+                            <th><Strong>Ejemplo</Strong></th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Selector de elemento (llamado algunas veces selector de etiqueta o tipo)	</td>
+                                <td>Todos los elementos HTML del tipo especificado.	</td>
+                                <td>Selecciona<p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Selector de identificación (ID)	</td>
+                                <td>El elemento en la página con el ID especificado (en una página HTML dada, solo se permite un único elemento por ID).</td>
+                                <td><code>#mi-id</code> 
+                                    Seleccione <code>&lt;p id="mi-id"&gt;&lt;/p&gt;</code> y &lt;a id="mi-id"&gt;</td>
+                            </tr>
+                            <tr>
+                                <td>Selector de clase	</td>
+                                <td>Los elementos en la página con la clase especificada (una clase puede aparecer varias veces en una página).	</td>
+                                <td><code>.mi-clase</code>
+                                    <strong>Seleccione</strong> <code>&lt;p class="mi-clase"&gt;&lt;/p&gt;</code> y <code>&lt;a class="mi-clase"&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>Selector de atributos</td>
+                                <td>Los elementos en una página con el atributo especificado.</td>
+                                <td><code>img[src]</code>
+                                    <strong>Selecciona</strong> <code>&lt;img src="mimagen.png"&gt;</code> pero no <code>&lt;img&gt;</code>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Selector de pseudoclase</td>
+                                <td>Los elementos especificados, pero solo cuando esté en el estado especificado, por ejemplo cuando el puntero esté sobre él.</td>
+                                <td><code>a:hover</code>
+                                    Selecciona <code>&lt;a&gt;</code>, pero solo cuando el puntero esté sobre el enlace.</td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+            </div>
+            <div class="datos-1">
+                <h2>Fuentes y texto</h2>
+                <p>En CSS, las propiedades relacionadas con fuentes y textos te permiten estilizar el texto en una página web. Aquí hay algunos conceptos básicos:
+                </p>
+                <br>
+                <ol>
+                    <li>Propiedadesde la fuente:
+                        <ul>
+                            <li><code>font-family</code>: Especifica la familia de fuentes para el texto. Ejemplo <code>font-family: Arial, sans-serif&semi;</code>.</li>
+                            <li>
+                                <code>font-size</code>: Define el tamaño de la fuente. Ejemplo: <code>-font-size: 16px&semi;</code>.
+                            </li>
+                            <li>
+                                    <code>font-weight</code>: Establece el grosor de la fuente. Ejemplo: <code>font-weight: bold&semi;</code>.
+                            </li>
+                            <li>
+                                <code>font-style</code>: Define el estilo de la fuente, como normal, cursiva o itálica. Ejemplo: <code>font-style: italic&semi;</code>.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Propiedades del texto:
+                        <ul>
+                            <li><code>color</code>: Cambia el color del texto. Ejemplo: <code>color: #333&semi;</code>.</li>
+                            <li><code>text-aling</code>: Alinea el texto (Izquierda, derecha, centro, justificado). Ejemplo: <code>text-aling: center&semi;</code>.</li>
+                            <li><code>text-decoration</code>: Agrega dcoraciones como subrayado, línea sobre el texto, etc. Ejemplo: <code>text-decoration: underline&semi;</code>.</li>
+                            <li><code>line-height</code>: Define la altura de la línea. Ejemplo: <code>line-height: 1.5&semi;</code>.</li>
+                            <li><code>letter-spacing</code>Ajusta el espacio entre las lineas. Ejemplo; <code>letter-spacing: 2px&semi;</code>.</li>
+                            <li><code>text-transform</code>: Controla la capitalización del texto (mayúsculas, minúsculas, capitaliar). Ejemplo: <code>text-transform: uppercase&semi;</code></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="datos-1">
+                <h2>Cajas, cajas, todo se trata de cajas.</h2>
+                <p>Una cosa que notarás sobre la escritura de CSS es que trata mucho sobre cajas —ajustando su tamaño, color, posición, etc—. Puedes pensar en la mayoría de los elementos HTML de tu página como cajas apiladas una sobre la otra.
+                <br>
+                <br>
+                <img src="../img/boxes.jpg" alt="">
+                <br>
+                <br>
+                No es de extrañar que el diseño de CSS esté basado principalmente en el modelo de caja . Cada una de las cajas que ocupan espacio en tu página tiene propiedades como estas:
+                <br>
+                <br>
+                <ul>
+                    <li><code>padding</code> (relleno), alrededor del contenido. En el ejemplo siguiente, es el espacio alrededor del texto del párrafo.</li>
+                    <li><code>border</code> (marco), la línea que se encuentra fuera del relleno.</li>
+                    <li><code>margin</code> (margen), el espacio fuera del elemento que lo separa de los demás.</li>
+                </ul>
+                <br>
+                <img src="../img/box-model.png" alt="">
+                <br>
+                </p>
+                <br>
+                <p>En esta sección también se utiliza:
+                    <br>
+                    <br>
+                    <ul>
+                        <li><code>width</code> (ancho del elemento)</li>
+                        <li><code>background-color</code>, el color de fondo del contenido y del relleno
+                        </li>
+                        <li><code>color</code>, el color del contenido del elemento (generalmente texto)</li>
+                        <li><code>text-shadow</code>: coloca una sombra difuminada en el texto dentro del elemento</li>
+                        <li><code>display</code>: selecciona el modo de visualización para el elemento (no te preocupes por esto por ahora)</li>
+                    </ul></p>
+                    <div class="datos-1">
+                        <h2>Conclusión</h2>
+                        <p>
+                            CSS es un lenguaje fundamental para la creación de sitios web atractivos y funcionales. Permite a los dasarrolladores controlar la apariencia y el diseño de los elementos HTML, como colores, fuentes, espaciado y disposición, de manera eficiente y efectiva. Con CSS, se pueden crear páginas web visualmente cohesivas y optimizadas para diversas pantallas y dispositivos.
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-aling">
+
+                <div class="footer-links">
+
+                    <h4>Pagina</h4>
+
+                    <ul>
+                        <li><a href="./vista4-Sobre nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="./vista5-Contactanos.html">Contactanos</a></li>
+                        <li><a href="./vista6-Bibliografia.html">Bibliografia</a></li>
+                    </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos</h4>
+                        <div class="social-links"><a href="#" class="redsocial1"><img src="../img/Facebook_Logo_2023.png" alt="Facebook_Icon"></a><a href="#" class="redsocial3"><img src="../img/WhatsApp_icon.png" alt="WhatsApp_icon"></a></div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/script1.js"></script>
+</body>
+</html>
